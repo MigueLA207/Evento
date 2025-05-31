@@ -434,8 +434,34 @@ footer{
     #menu-toggle:checked + .menu-icon + .navbar__list {
         height: 40vh;
     }
-}
 
+    .mainContent__title{
+        font-size: 80px;
+    }
+
+    .mainContent__subtittle {
+        font-size: 40px;
+    }
+    .mainContent__text{
+        font-size: 15px;
+    }
+    .hero-button{
+        font-size: 15px;
+    }
+    .carrusel{
+        width: 80%;
+    }   
+
+    .footer__networks a {
+        padding: 5px;
+    }
+
+    .footer__nav ul li a {
+        font-size: 17px;
+        margin: 15px;
+    }    
+    
+}
 
 
 
