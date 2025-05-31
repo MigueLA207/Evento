@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-tickets</title>
+    <link rel="shortcut icon" href="imagenes/logo.png">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section class="back" id="inicio">
+        <div class="overlay"></div>
+        <div class="content">
+            <header>
+                <nav class="navbar">
+                    <h1 class="navbar__logo">WAKE UP!</h1>
+                    <input type="checkbox" id="menu-toggle">
+                    <label for="menu-toggle" class="menu-icon">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </label>
+                    <ul class="navbar__list">
+                        <li class="navbar__item"><a href="#Memorias">Memorias</a></li>
+                        <li class="navbar__item"><a href="#register ">Registro</a></li>
+                        <li class="navbar__item"><a href="#register">Contactanos</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <main class="mainContent">
+                <div class="hero-text">
+                    <h1 class="mainContent__title">System Of a Down</h1>
+                    <h2 class="mainContent__subtittle">2025 • WAKE UP!</h2>
+                    <p class="mainContent__text">
+                        En un evento inédito organizado por la promotora brasileña 30e,<br>
+                        System Of A Down anuncia una gira en Sudamérica en 2025.<br>
+                        ¡El regreso después de casi 10 años!
+                    </p>
+                    <button class="hero-button">🎟 Comprar ahora</button>
+                </div>
+            </main>
+        </div>
+    </section>
+    <h2 id="Memorias" class="carrusel__title">Momentos Vividos</h2>
+    <section class="carrusel">
+
+        <article class="carrusel__element">
+            <p class="carrusel__text">"¡Fue épico! Ver a System Of A Down en vivo después de tantos años fue como
+                revivir mi juventud.
+                La energía en el estadio era una locura. ¡Gracias WAKE UP Tour!"</p>
+            <div class="carrusel__user">
+                <h3><span class="carrusel__user__box">MA</span> Mariana Alves</h3>
+            </div>
+        </article>
+
+        <article class="carrusel__element">
+            <p class="carrusel__text">"Volé desde Argentina solo para verlos. El sonido, las luces, la organización...
+                todo fue impecable.
+                No puedo esperar a que vuelvan otra vez."</p>
+            <div class="carrusel__user">
+                <h3><span class="carrusel__user__box">JP</span> Juan Pablo Rivas</h3>
+            </div>
+        </article>
+
+        <article class="carrusel__element">
+            <p class="carrusel__text">"Lloré cuando tocaron 'Chop Suey!'. Nunca pensé que iba a vivir esto. Gracias 30e
+                por hacer esto realidad
+                en Sudamérica. ¡El mejor concierto de mi vida!"</p>
+            <div class="carrusel__user">
+                <h3><span class="carrusel__user__box">CL</span> Camila López</h3>
+            </div>
+        </article>
+
+        <article class="carrusel__element">
+            <p class="carrusel__text">"No solo fue un concierto, fue una experiencia completa. Desde que llegamos, todo
+                fue mágico.
+                El merchandising, la gente, la vibra... inolvidable."</p>
+            <div class="carrusel__user">
+                <h3><span class="carrusel__user__box">DG</span> Diego Gómez</h3>
+            </div>
+        </article>
+
+        <article class="carrusel__element">
+            <p class="carrusel__text">"De los mejores festivales a los que he ido, es una experiencia increible, nunca pense en vivir algo asi. Es un festival muy completo. Volveria 1000 veces si es necesario"</p>
+            <div class="carrusel__user">
+                <h3><span class="carrusel__user__box">JF</span> Juan Puerta</h3>
+            </div>
+        </article>
+    </section>
+    </section>
+    <section class="register__section" id="register">
+        <div class="register__img"></div>
+
+        <form action="/send" method="post" class="register__form">
+            <h2 class="contact__title">Registrate!</h2>
+
+            <label for="name">Nombre Completo:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Correo:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Compañia:</label>
+            <input type="text" id="message" name="message">
+
+            <label for="ticket">Tipo de entrada:</label>
+            <select name="ticket" id="ticket" required>
+                <option value="" disabled selected>Selecciona un ticket</option>
+                <option value="student">Estudiante - $99 USD</option>
+                <option value="professional">Profesional - $299 USD</option>
+                <option value="business">Negocio - $499 USD</option>
+            </select>
+
+            <label for="PhoneNumber">Phone Number:</label>
+            <input type="number" id="number" name="number">
+
+            <input type="submit" value="enviar" id="buttonSubmit">
+        </form>
+    </section>
+
+
+    <footer>
+        <section class="footer__container">
+            <section class="footer__networks">
+
+                <a href="https://web.facebook.com/Tuboleta/?locale=es_LA&_rdc=1&_rdr#" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+
+                <a href="https://www.instagram.com/tuboleta/?hl=es" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+
+                <a href="https://x.com/Tuboletaoficial?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+
+                <a href="https://www.youtube.com/channel/UC7-YMmnc0ppcWmio8t1WdcA" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                
+                <a href="https://open.spotify.com/intl-es/artist/5eAWCfyUhZtHHtBdNk56l1" target="_blank"><i class="fa-brands fa-spotify"></i></a>
+            </section>
+            <section class="footer__nav">
+                <ul>
+                    <li><a href="#inicio">Home</a></li>
+
+                    <li><a href="https://indiehoy.com/noticias/system-of-a-down-en-sudamerica-setlist-y-sorpresas-de-los-primeros-shows/" target="_blank">News</a></li>
+
+                    <li><a href="#">About</a></li>
+
+                    <li><a href="https://web.tuboleta.com/images/Servicio-al-cliente/Home.html?_gl=1*lgyoch*_gcl_aw*R0NMLjE3NDg2NTM5ODAuQ2p3S0NBandydVhCQmhBckVpd0FDQlJ0SFc2MUVYUy0wTUU3SWZaSGxOcnpULVV4Ym1zUnBQR3BYWFpmMkNaV1Jad1hGcUg3VXNRWjdob0MyY29RQXZEX0J3RQ..*_gcl_au*NzEzNDkxNjUwLjE3NDg1NDgyMTc.*_ga*MjAxNDMyNzg4My4xNzQ4NTQ4MjE2*_ga_0TVTJ30NVQ*czE3NDg2NTM4ODckbzMkZzEkdDE3NDg2NTM5NzkkajI5JGwwJGg1ODY3MDA3NDQ." target="_blank">Contact us</a></li>
+                </ul>
+            </section>
+        </section>
+        <section class="footer_bottom">
+            <p>Copyright &copy; 2025; Designed by <span class="designer">Miguelito Arias</span></p>
+        </section>
+    </footer>
+
+</body>
+
+</html>
