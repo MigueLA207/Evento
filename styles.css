@@ -251,7 +251,7 @@
 .register__form {
     flex: 40%;
     background-color: #000;
-    padding: 140px 40px;
+    padding: 10px 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -261,7 +261,6 @@
     box-shadow: -10px 0 20px rgba(0, 0, 0, 0.5);
 }
 
-/* Título llamativo */
 .contact__title {
     font-size: 30px;
     font-weight: bold;
@@ -291,7 +290,7 @@
     background-color: #333;
 }
 
-/* Etiquetas */
+/* labels */
 .register__form label {
     font-weight: bold;
     margin-top: 10px;
@@ -394,6 +393,8 @@ footer{
     color: orange;
 }
 
+
+
 @media(max-width:768px){
 
     .back{
@@ -432,7 +433,7 @@ footer{
     }
 
     #menu-toggle:checked + .menu-icon + .navbar__list {
-        height: 40vh;
+        height: 30vh;
     }
 
     .mainContent__title{
@@ -462,6 +463,9 @@ footer{
     }    
     
 }
+
+
+
 
 
 
